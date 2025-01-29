@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+.black{
+  
+  
+  background-color: #121212 ;
+}
+.white{
+  color: #EAEAEA   
+}
+.primary{
+  background-color: #8A2BE2 ;
+}
