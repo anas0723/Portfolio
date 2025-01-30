@@ -1,13 +1,9 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
+import React from 'react'
+import "./index.css";
+
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes> 
-        <Route path="/" element={<Header />} />
-      </Routes> 
-    </BrowserRouter>
-  );
+    <div className='flex justify-center bg-color'>ansa</div>
+  )
 }
