@@ -1,9 +1,12 @@
 import React from 'react'
 import "./index.css";
+import Header from './components/header';
 
 
 export default function App() {
   return (
-    <div className='flex justify-center bg-color'>ansa</div>
-  )
+    <>
+    <Header />
+    </>
+    )
 }

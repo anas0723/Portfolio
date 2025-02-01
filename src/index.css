@@ -1,7 +1,18 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
-.bg-color {
-  
-  background-color: red
-
+.allura-regular {
+   font-family: "Allura", cursive;
+   font-weight: 400;
+   font-style : normal;
+ }
+ @layer components {
+.custom-bg {
+   background-color: #0A192F ;
+   color : rgb(136 146 176 );
 }
+.specific-color{
+   color: rgb(63, 193, 163);
+  }
+ }
