@@ -1,18 +1,27 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 .allura-regular {
-   font-family: "Allura", cursive;
-   font-weight: 400;
-   font-style : normal;
- }
- @layer components {
-.custom-bg {
-   background-color: #0A192F ;
-   color : rgb(136 146 176 );
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
-.specific-color{
-   color: rgb(63, 193, 163);
+@layer components {
+  .custom-bg {
+    background-color: #0a192f;
+    color: rgb(136 146 176);
   }
- }
+  .specific-color {
+    color: rgb(63, 193, 163);
+  }
+  .mouse-back {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transition: transform 0.1s linear;
+  }
+}
