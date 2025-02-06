@@ -14,16 +14,21 @@ export default function header() {
             {decode("&gt")}
           </a>
         </h1>
-        <ul className=" flex  text-lg justify-evenly gap-10 mr-14">
-          <li className=" ">
-            <a className="" href="">Contact</a>
+        <ul className="  flex  text-lg justify-evenly gap-10 mr-14">
+          <li className=" hover:underline relative inline-block overflow-hidden ">
+            <a
+              href="#"
+              class=" hover:underline decoration-[#3fc1a3] decoration-2 jtransition-all duration-500"
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="">About</a>
+            <a  className="hover:underline decoration-[#3fc1a3] decoration-2 jtransition-all duration-500" href="">Projects</a>
           </li>
           <li>
             {" "}
-            <a href="">Projects</a>
+            <a className="hover:underline decoration-[#3fc1a3] decoration-2 jtransition-all duration-500" href="">Contact</a>
           </li>
         </ul>
       </header>
