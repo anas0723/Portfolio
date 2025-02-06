@@ -7,13 +7,12 @@ const links = [
   { title: "Projects", link: "#Project" },
   { title: "Contact", link: "#Contact" },
 ];
-const navlinkStyle = "transition-all duration-30 cursor-pointer";
 
 export default function Header() {
   const [isHamburgerOpen, setIsHamBurgerOpen] = useState(false);
 
   return (
-    <header className="custom-bg flex justify-between items-center w-dvw p-4">
+    <header className="custom-bg flex justify-between items-center w-full p-4 relative">
       <h1>
         <a href="/" className="text-3xl">
           {decode("&lt")}{" "}
@@ -24,25 +23,39 @@ export default function Header() {
         </a>
       </h1>
 
+      {/* Hamburger Menu Button for Small Screens */}
       <div
-        className="text-3xl  cursor-pointer "
+        className="text-3xl sm:hidden cursor-pointer"
         onClick={() => setIsHamBurgerOpen(!isHamburgerOpen)}
-      > <span className="text-3xl mobile sm:hidden  ">
+      >
         <RxHamburgerMenu />
-      </span>
       </div>
 
-      <ul
-        className={`flex  text-lg justify-evenly gap-10 mr-14 ${
-          isHamburgerOpen ? "flex-col absolute top-full left-0 w-full bg-white" : "flex-row"
-        }`}
-      >
+      {/* Desktop Menu (Hidden on Small Screens) */}
+      <ul className="hidden sm:flex text-lg justify-evenly gap-10 mr-14">
         {links.map((item, i) => (
-          <li  className={`navlinkStyle hover:underline hover:decoration-[#3fc1a3] decoration-2 `} key={i}>
+          <li
+            className="navlinkStyle hover:underline hover:decoration-[#3fc1a3] decoration-2"
+            key={i}
+          >
             <a href={item.link}>{item.title}</a>
           </li>
         ))}
       </ul>
+
+      {/* Mobile Menu (Visible when Hamburger is Open) */}
+      {isHamburgerOpen && (
+        <ul className="mobile-screen flex flex-col items-end absolute top-full right-0 w-full bg-[#0a192f] py-4 px-6 sm:hidden">
+          {links.map((item, i) => (
+            <li
+              className="navlinkStyle py-2 text-right hover:underline hover:decoration-[#3fc1a3] decoration-2"
+              key={i}
+            >
+              <a href={item.link}>{item.title}</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 }
