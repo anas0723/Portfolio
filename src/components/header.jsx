@@ -14,16 +14,16 @@ export default function header() {
             {decode("&gt")}
           </a>
         </h1>
-        <ul className=" flex text-lg  justify-ceter gap-10 mr-14">
-          <li>
-            <a href="">Contact</a>
+        <ul className=" flex  text-lg justify-evenly gap-10 mr-14">
+          <li className=" ">
+            <a className="" href="">Contact</a>
           </li>
           <li>
             <a href="">About</a>
           </li>
           <li>
             {" "}
-            <a href="">Contact</a>
+            <a href="">Projects</a>
           </li>
         </ul>
       </header>

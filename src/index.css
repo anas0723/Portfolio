@@ -24,7 +24,23 @@
     pointer-events: none;
     transition: transform 0.1s linear;
   }
-.car{
-  color : red
-}}
 
+
+
+
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0s ease-out forwards;
+}
