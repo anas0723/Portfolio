@@ -1,9 +1,15 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
 .allura-regular {
   font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.delicious-handrawn-regular {
+  font-family: "Delicious Handrawn", serif;
   font-weight: 400;
   font-style: normal;
 }
