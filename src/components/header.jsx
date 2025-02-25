@@ -67,9 +67,9 @@ export default function Header() {
               </a>
             </li>
           ))}
-          <li className="w-full flex justify-end mt-2">
+          <li className="w-full flex justify-end pb-2 ">
             <a
-              className="rounded-2xl text-white px-4 py-2 border-2 border-transparent hover:border-amber-500 shadow-none hover:shadow-lg hover:shadow-amber-500 transition-all duration-300"
+              className="rounded-2xl text-white px-4 py-2 border-2 border-transparent hover:border-sky-500 shadow-none hover:shadow-lg hover:shadow-sky-500 transition-all duration-300"
               href="/resume"
             >
               Resume
