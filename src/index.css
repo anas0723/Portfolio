@@ -13,6 +13,10 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+  overflow: visible;  
+  pointer-events: painted;
+}
 
 @layer components {
   .custom-bg {

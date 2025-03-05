@@ -9,10 +9,12 @@ const links = [
   // { title: "Resume", link: "#Resume"}
 ];
 
+
 export default function Header() {
   const [isHamburgerOpen, setIsHamBurgerOpen] = useState(false);
 
   return (
+    
     <header className="custom-bg flex justify-between items-center w-full p-4 relative">
       <h1>
         <a href="/" className="text-3xl text-right relative group">

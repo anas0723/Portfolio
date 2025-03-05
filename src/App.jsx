@@ -1,15 +1,19 @@
-import React from 'react'
+import React from "react";
 import "./index.css";
-import Header from './components/Header';
-import Body from './components/Body.jsx';
-import Mouse from './components/Mouse.jsx';
+import Body from "./components/Body.jsx";
+import Header from "./components/Header.jsx";
+import MetaBalls from "./components/MetaBalls.jsx";
+import Source from "./components/Source.jsx";
+
 
 export default function App() {
   return (
     <>
-    <Header />
-    <Body />
-    <Mouse />
+      <Header />
+      <Body />
+      
+      <MetaBalls />
+      <Source />
     </>
-    )
+  );
 }
