@@ -4,7 +4,7 @@ import MetaBalls from "./MetaBalls";
 const Source = () => {
 
   return (
-    <div className="fixed inset-0 overflow-hidden ">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none ">
       <MetaBalls
        
         color="#3fc1a3"
