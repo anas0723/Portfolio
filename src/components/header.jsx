@@ -6,15 +6,12 @@ const links = [
   { title: "Home", link: "#About" },
   { title: "Projects", link: "#Project" },
   { title: "Contact", link: "#Contact" },
-  // { title: "Resume", link: "#Resume"}
 ];
-
 
 export default function Header() {
   const [isHamburgerOpen, setIsHamBurgerOpen] = useState(false);
 
   return (
-    
     <header className="custom-bg flex justify-between items-center w-full p-4 relative">
       <h1>
         <a href="/" className="text-3xl text-right relative group">
@@ -26,16 +23,16 @@ export default function Header() {
         </a>
       </h1>
 
-      {/* Hamburger Menu Button for Small Screens */}
+      {/* Hamburger Menu Button */}
       <div
-        className="text-3xl sm:hidden cursor-pointer"
+        className="text-3xl sm:hidden cursor-pointer transition-transform duration-300 ease-in-out"
         onClick={() => setIsHamBurgerOpen(!isHamburgerOpen)}
       >
         <RxHamburgerMenu />
       </div>
 
-      {/* Desktop Menu (Hidden on Small Screens) */}
-      <ul className="hidden sm:flex text-lg justify-evenly gap-10 mr-14">
+      {/* Desktop Menu */}
+      <ul className="hidden sm:flex text-lg justify-evenly gap-10 mr-14 items-center">
         {links.map((item, i) => (
           <li className="navlinkStyle py-2 text-right relative group" key={i}>
             <a
@@ -46,19 +43,24 @@ export default function Header() {
             </a>
           </li>
         ))}
-        <li className="w-full flex justify-end ">
+        {/* Resume Button - Desktop */}
+        <li className="ml-auto">
           <a
-            className="rounded-2xl text-white px-4  py-2 border-2 border-transparent hover:border-sky-500 shadow-none hover:shadow-lg hover:shadow-sky-500 transition-all duration-300"
-            href="#resume"  
+            className="rounded-2xl text-white px-4 py-2 border-2 border-transparent  shadow-none hover:shadow-lg hover:border-[#64ffda]  hover:shadow-[#64ffda]  transition-all duration-300"
+            href="/resume.pdf"
           >
             Resume
           </a>
         </li>
       </ul>
 
-      {/* Mobile Menu (Visible when Hamburger is Open) */}
-      {isHamburgerOpen && (
-        <ul className="mobile-screen flex flex-col items-end absolute top-full right-0 w-full bg-[#0a192f] py-4 px-6 sm:hidden">
+      {/* Mobile Menu with Smooth Transition */}
+      <div
+        className={`absolute top-full right-0 w-full bg-[#0a192f] py-4 px-6 sm:hidden transition-all duration-300 ease-in-out transform ${
+          isHamburgerOpen ? "translate-y-0 opacity-100" : "-translate-y-5 opacity-0 pointer-events-none"
+        }`}
+      >
+        <ul className="flex flex-col items-end">
           {links.map((item, i) => (
             <li className="navlinkStyle py-2 text-right relative group" key={i}>
               <a
@@ -69,16 +71,17 @@ export default function Header() {
               </a>
             </li>
           ))}
-          <li className="w-full flex justify-end pb-2 " >
+          {/* Resume Button - Mobile */}
+          <li className="w-full flex justify-end pt-2">
             <a
-              className="rounded-2xl text-white px-4 py-2 border-2 border-transparent hover:border-sky-500 shadow-none hover:shadow-lg hover:shadow-sky-500 transition-all duration-300"
-              href="/resume"
+              className="rounded-2xl text-white px-4 py-2 border-2 border-transparent hover:border-[#64ffda] shadow-none hover:shadow-lg hover:shadow-[#64ffda] transition-all duration-300 mr-[-13px]"
+              href="/resume.pdf"
             >
               Resume
             </a>
           </li>
         </ul>
-      )}
+      </div>
     </header>
   );
 }
