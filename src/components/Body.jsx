@@ -1,11 +1,12 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import FallingText from "./FallingText";
 
 export default function Body() {
   return (
     <>
       <div className="bg-white w-full h-screen flex justify-center">
-        <div className="shadow-2xl bg-color w-[90%] p-6">
+        <div className="shadow-2xl  bg-color w-[90%] p-6">
           <h1 className="  text-white text-2xl">
             Hi, My self
             <br />
@@ -70,6 +71,29 @@ export default function Body() {
               I’m always open to learning new technologies and collaborating on
               exciting projects. Let’s build something amazing together! 🚀
             </p>
+          </div>
+
+          <div className="relative w-full h-64 mt-10 border-[#3fc1a3] border rounded overflow-hidden">
+            <FallingText className="border border-amber-300 "
+              text={`MERN Stack React & Tailwind Frontend Developer Code & Coffee Sleek Designs Learning New Technologies.`}
+              highlightWords={[
+                "MERN",
+                "Frontend",
+                "Code",
+                "React",
+                "Designs",
+                "Learning",
+                "Technologies"
+
+              ]}
+              highlightClass="highlighted"
+              trigger="hover"
+              backgroundColor="transparent"
+              wireframes={false}
+              gravity={0.56}
+              fontSize="1.5rem"
+              mouseConstraintStiffness={0.9}
+            />
           </div>
         </div>
       </div>
