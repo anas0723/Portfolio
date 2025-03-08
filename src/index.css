@@ -15,7 +15,7 @@
 }
 body {
   overflow: visible;  
-  pointer-events: painted;
+    
 }
 
 @layer components {
