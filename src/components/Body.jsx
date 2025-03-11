@@ -1,9 +1,12 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import FallingText from "./FallingText";
-
+import Cursor from "./cursor";
 export default function Body() {
   return (
+<>
+<Cursor />
+
     <div className="bg-[#0a192f] w-full min-h-screen flex justify-center items-center p-6">
       <div className="bg-[#112240] shadow-2xl rounded-lg w-full max-w-6xl p-8 text-white">
         <h1 className="text-xl sm:text-2xl font-light">Hi, Myself</h1>
@@ -85,5 +88,6 @@ export default function Body() {
         </div>
       </div>
     </div>
+    </>
   );
 }
