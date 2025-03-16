@@ -12,7 +12,7 @@ import Tailwind from "../assets/Pictures/tailwind-icons.svg";
 import TypeScript from "../assets/Pictures/type-scrtip-icons.svg";
 import Vercel from "../assets/Pictures/vercel-icons.svg";
 import VsCode from "../assets/Pictures/vscode-icons.svg";
-import Css from '../assets/Pictures/css-icon.jpeg';
+import Css from "../assets/Pictures/css-icon.jpeg";
 
 export default function Skill() {
   const images = [
@@ -30,22 +30,24 @@ export default function Skill() {
     { src: TypeScript, alt: "TypeScript" },
     { src: Vercel, alt: "Vercel" },
     { src: VsCode, alt: "VS Code" },
-    { src: Css, alt: "CSS" }
+    { src: Css, alt: "CSS" },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white">
-      <h1 className="text-5xl mb-8">Languages & Tools</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen text-white px-4 lg:px-24">
+      <h1 className="text-4xl md:text-5xl font-bold mb-12">
+        Languages & Tools
+      </h1>
       <div className="flex flex-wrap justify-center gap-8">
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative p-2 rounded transition-all duration-300 hover:scale-110 ]"
+            className="p-2 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-gradient-to=r hover:shadow-2xl hover:shadow-blue-700 "
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="h-16 w-16 transition-transform duration-300 hover:scale-[1.3_1.1]"
+              className="h-16 w-16 md:h-20 md:w-20 object-contain"
             />
           </div>
         ))}

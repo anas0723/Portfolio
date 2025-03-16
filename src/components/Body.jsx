@@ -3,6 +3,8 @@ import { ReactTyped } from "react-typed";
 import FallingText from "./FallingText";
 import Cursor from "./cursor";
 import Skill from "./Skill";
+import Project from "./Project.jsx";
+
 export default function Body() {
   return (
     <>
@@ -112,6 +114,7 @@ export default function Body() {
             />
           </div>
           <Skill />
+          <Project />
         </div>
       </div>
     </>
