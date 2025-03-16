@@ -25,10 +25,10 @@ export default function Cursor() {
       }
 
       // Dynamically update cursor color from background
-    //   if (element) {
-    //     const bgColor = window.getComputedStyle(element).backgroundColor;
-    //     setCursorColor(bgColor === "rgba(0, 0, 0, 0)" ? "#3fc1a3" : bgColor);
-    //   }
+        if (element) {
+          const bgColor = window.getComputedStyle(element).backgroundColor;
+          setCursorColor(bgColor === "rgba(0, 0, 0, 0)" ? "#3fc1a3" : bgColor);
+        }
     };
 
     window.addEventListener("mousemove", mouseMove);

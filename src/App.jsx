@@ -8,9 +8,9 @@ import Cursor from "./components/cursor.jsx";
 export default function App() {
   return (
     <>
-      {/* <Header />
-      <Body />
-      <Cursor /> */}
+      <Header />
+      <Body /> 
+      <Cursor /> 
     </>
   );
 }
