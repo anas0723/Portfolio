@@ -25,7 +25,7 @@ export default function Header() {
 
       {/* Hamburger Menu Button */}
       <div
-        className="text-3xl sm:hidden cursor-pointer transition-transform duration-300 ease-in-out"
+        className="text-3xl sm:hidden Cursor-pointer transition-transform duration-300 ease-in-out"
         onClick={() => setIsHamBurgerOpen(!isHamburgerOpen)}
       >
         <RxHamburgerMenu />

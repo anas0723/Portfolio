@@ -8,7 +8,7 @@ export default function Cursor() {
   const smoothY = useSpring(mouseY, { stiffness: 50, damping: 10 });
 
   const [isHovering, setIsHovering] = useState(false);
-  const [cursorColor, setCursorColor] = useState("#3fc1a3"); // Default cursor color
+  const [CursorColor, setCursorColor] = useState("#3fc1a3"); // Default Cursor color
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -24,7 +24,7 @@ export default function Cursor() {
         setIsHovering(false);
       }
 
-      // Dynamically update cursor color from background
+      // Dynamically update Cursor color from background
         if (element) {
           const bgColor = window.getComputedStyle(element).backgroundColor;
           setCursorColor(bgColor === "rgba(0, 0, 0, 0)" ? "#3fc1a3" : bgColor);
@@ -43,7 +43,7 @@ export default function Cursor() {
       style={{
         x: smoothX,
         y: smoothY,
-        backgroundColor: cursorColor,
+        backgroundColor: CursorColor,
       }}
     />
   );

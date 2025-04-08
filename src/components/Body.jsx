@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import FallingText from "./FallingText";
-import Cursor from "./cursor";
+import Cursor from "./Cursor.jsx";
 import Skill from "./Skill";
 import Project from "./Project.jsx";
 
