@@ -21,7 +21,7 @@ body {
     
 }
 
-@layer components {
+@layer components  {
   .custom-bg {
     background-color: #0a192f;
     color: rgb(136 146 176);
