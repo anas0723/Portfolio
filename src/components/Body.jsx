@@ -4,6 +4,8 @@ import FallingText from "./FallingText";
 import Cursor from "./Cursor.jsx";
 import Skill from "./Skill";
 import Project from "./Project.jsx";
+import MainCursor from "./MainCursor.jsx";
+
 
 export default function Body() {
   return (
@@ -12,28 +14,32 @@ export default function Body() {
 
       <div className="bg-[#0a192f] w-full min-h-screen flex justify-center items-center p-6">
         <div className="bg-[#112240]  shadow-2xl rounded-lg w-full max-w-6xl p-8 text-white">
-          <h1 className="text-xl  inline sm:text-2xl font-light">Hi, Myself</h1>
-          <br />
-          <h2 className="text-4xl inline  sm:text-5xl font-bold text-[#64ffda] mt-2">
-            Muhammad Anas
-          </h2>
-          <br />
-          <h3 className="text-lg  inline sm:text-2xl font-light  text-gray-300 mt-2 delicious-handrawn-regular">
-            I build sleek and interactive web experiences.
-          </h3>
+          <div className="">
+            <h1 className="text-xl  inline sm:text-2xl font-light">
+              Hi, Myself
+            </h1>
+            <br />
+            <h2 className="text-4xl inline  sm:text-5xl font-bold text-[#64ffda] mt-2">
+              Muhammad Anas
+            </h2>
+            <br />
+            <h3 className="text-lg  inline sm:text-2xl font-light  text-gray-300 mt-2 delicious-handrawn-regular">
+              I build sleek and interactive web experiences.
+            </h3>
 
-          <div className="mt-4 text-lg text-[#64ffda]">
-            <ReactTyped
-              strings={[
-                "Building sleek, responsive, and dynamic web apps",
-                "Always learning new things & dedicated to my work",
-                "I am a MERN Stack Developer",
-              ]}
-              typeSpeed={50}
-              backSpeed={30}
-              loop
-            />
-          </div>
+            <div className="mt-4 text-lg text-[#64ffda]">
+              <ReactTyped
+                strings={[
+                  "Building sleek, responsive, and dynamic web apps",
+                  "Always learning new things & dedicated to my work",
+                  "I am a MERN Stack Developer",
+                ]}
+                typeSpeed={50}
+                backSpeed={30}
+                loop
+              />
+            </div>
+          
 
           <div className="flex justify-center mt-6">
             <button className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2  border-[#64ffda]  shadow-lg shadow-[#64ffda] transition-all duration-300">
@@ -69,16 +75,17 @@ export default function Body() {
               . Let's build something amazing together! 🚀
             </p>
           </div>
+          </div>
 
           <div className="relative sm:hidden md:flex hidden  text-full h-64 mt-10 border-[#64ffda] border rounded-lg overflow-hidden">
             <FallingText
-              text={`MERN Stack React & Tailwind Frontend Developer Code & Coffee Sleek Designs Learning New Technologies`}
+              text={`MERN Stack React & Tailwind Frontend Developer Code & Chai Sleek Designs Learning New Technologies`}
               highlightWords={[
                 "MERN",
                 "React",
                 "Tailwind",
                 "Developer",
-                "Coffee",
+                "Chai",
                 "Designs",
                 "New",
               ]}
@@ -115,6 +122,7 @@ export default function Body() {
           </div>
           <Skill />
           <Project />
+          <MainCursor />
         </div>
       </div>
     </>

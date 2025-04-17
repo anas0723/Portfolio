@@ -12,7 +12,7 @@ import Tailwind from "../assets/Pictures/tailwind-icons.svg";
 import TypeScript from "../assets/Pictures/type-scrtip-icons.svg";
 import Vercel from "../assets/Pictures/vercel-icons.svg";
 import VsCode from "../assets/Pictures/vscode-icons.svg";
-import Css from "../assets/Pictures/css-icon.jpeg";
+import Css from "../assets/Pictures/css-icon.png";
 
 export default function Skill() {
   const images = [
@@ -42,12 +42,12 @@ export default function Skill() {
         {images.map((image, index) => (
           <div
             key={index}
-            className="p-2 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-gradient-to=r hover:shadow-2xl hover:shadow-blue-700 "
+            className="p-2 rounded-lg transition-transform duration-300 scale-110 bg-gradient-to=r shadow-2xl shadow-blue-700 "
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="h-16 w-16 md:h-20 md:w-20 object-contain"
+              className="h-20 w-20 md:h-20 md:w-20 object-contain" 
             />
           </div>
         ))}

@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function Project() {
+const MainCursor = () => {
   return (
     <>
     </>
   )
 }
+
+export default MainCursor

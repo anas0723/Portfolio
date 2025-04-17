@@ -2,9 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
-
-*{
-  Cursor: none;
+.MainCursor{
+  text-align: center;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: url(./assets/Pictures/black-cursor.png), auto;
 }
 .allura-regular {
   font-family: "Allura", cursive;
