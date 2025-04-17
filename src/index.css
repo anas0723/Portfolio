@@ -4,13 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 .MainCursor{
   text-align: center;
-  z-index: 1;
-  width: 10px;
-  height: 10px;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  pointer-events: none;
   cursor: url(./assets/Pictures/black-cursor.png), auto;
+  /* cursor: url(./assets/Pictures/cursor-white.png), auto; */
 }
 .allura-regular {
   font-family: "Allura", cursive;

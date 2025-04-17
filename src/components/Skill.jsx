@@ -34,23 +34,28 @@ export default function Skill() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white px-4 lg:px-24">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12">
-        Languages & Tools
-      </h1>
-      <div className="flex flex-wrap justify-center gap-8">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="p-2 rounded-lg transition-transform duration-300 scale-110 bg-gradient-to=r shadow-2xl shadow-blue-700 "
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="h-20 w-20 md:h-20 md:w-20 object-contain" 
-            />
-          </div>
-        ))}
+    <div id="skills" className="mt-20">
+      <div className="bg-[#112240] shadow-2xl rounded-lg p-8">
+        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">
+          Languages & Tools
+        </h1>
+        <div className="flex flex-wrap justify-center gap-8">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="group relative p-4 rounded-lg transition-all duration-300 hover:scale-110 bg-[#0a192f] hover:bg-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-20 w-20 md:h-20 md:w-20 object-contain transition-all duration-300 group-hover:brightness-35"
+              />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white font-semibold text-lg">{image.alt}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
