@@ -37,7 +37,7 @@ export default function Cursor() {
 
   return (
     <motion.div
-      className={`w-8 h-8 rounded-full fixed left-0 top-0 pointer-events-none z-50 ${
+      className={`w-8 h-8 rounded-full fixed left-0 top-0 pointer-events-none ${
         isHovering ? "mix-blend-difference border border-white" : ""
       }`}
       style={{

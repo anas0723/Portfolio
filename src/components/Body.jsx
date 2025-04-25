@@ -3,6 +3,8 @@ import { ReactTyped } from "react-typed";
 import FallingText from "./FallingText";
 import Skill from "./Skill";
 import Project from "./Project.jsx";
+import SocialLinks from "./SocialLinks.jsx";
+import { LiaAcquisitionsIncorporated } from "react-icons/lia";
 
 export default function Body() {
   const scrollToAbout = () => {
@@ -33,7 +35,7 @@ export default function Body() {
               strings={[
                 "Building sleek, responsive, and dynamic web apps",
                 "Always learning new things & dedicated to my work",
-                "I am a MERN Stack Developer",
+                "I am MERN Stack Developer",
               ]}
               typeSpeed={50}
               backSpeed={30}
@@ -42,12 +44,11 @@ export default function Body() {
           </div>
         
           <div className="flex justify-center mt-6">
-            <button 
-              onClick={scrollToAbout}
-              className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg shadow-[#64ffda] transition-all duration-300 hover:bg-[#64ffda] hover:text-[#0a192f] cursor-pointer"
+            <ul 
+              className="text-xl sm:text-3xl px-6 py-3 rounded-lg border-2 border-[#64ffda] shadow-lg hover:shadow-[#64ffda] transition-all duration-300  "
             >
               About Me
-            </button>
+            </ul>
           </div>
 
           <div id="about" className="flex justify-center">
@@ -80,7 +81,7 @@ export default function Body() {
           </div>
         </div>
 
-        <div className="relative sm:hidden md:flex hidden text-full h-64 mt-10 border-[#64ffda] border rounded-lg overflow-hidden">
+        <div className="relative sm:hidden md:flex hidden text-full h-[230px] mt-10 border-[#64ffda] border rounded-lg overflow-hidden ">
           <FallingText
             text={`MERN Stack React & Tailwind Frontend Developer Code & Chai Sleek Designs Learning New Technologies`}
             highlightWords={[
@@ -124,7 +125,8 @@ export default function Body() {
           />
         </div>
         <Skill />
-        <Project />
+        <SocialLinks />
+        {/* <Project /> */}
       </div>
     </div>
   );

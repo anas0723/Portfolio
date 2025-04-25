@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import MainCursor from "./MainCursor";
 
 const links = [
-  { title: "Home", link: "#About" },
+  { title: "About", link: "#About" },
   { title: "Projects", link: "#Project" },
   { title: "Contact", link: "#Contact" },
 ];
