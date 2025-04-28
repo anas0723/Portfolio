@@ -19,39 +19,44 @@ export default function Skill() {
     { src: FireBase, alt: "Firebase" },
     { src: Git, alt: "Git" },
     { src: GitHub, alt: "GitHub" },
-    { src: Html, alt: "HTML" },
+    { src: Html, alt: "HTML 5" },
     { src: Js, alt: "JavaScript" },
     { src: MongoDb, alt: "MongoDB" },
     { src: Mui, alt: "Material-UI" },
-    { src: Next, alt: "Next.js" },
+    { src: Next, alt: "Next.JS" },
     { src: PostMan, alt: "Postman" },
-    { src: React, alt: "React" },
+    { src: React, alt: "React.JS" },
     { src: Tailwind, alt: "Tailwind CSS" },
     { src: TypeScript, alt: "TypeScript" },
     { src: Vercel, alt: "Vercel" },
     { src: VsCode, alt: "VS Code" },
-    { src: Css, alt: "CSS" },
+    { src: Css, alt: "CSS 3" },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white px-4 lg:px-24">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12">
+    <div id="skills" className="mt-20">
+    <div className="bg-[#112240]  p-8">
+      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">
         Languages & Tools
       </h1>
       <div className="flex flex-wrap justify-center gap-8">
         {images.map((image, index) => (
           <div
             key={index}
-            className="p-2 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-gradient-to=r hover:shadow-2xl hover:shadow-blue-700 "
+            className="group relative p-4 rounded-lg transition-all duration-300 hover:scale-110 bg-[#0a192f] hover:bg-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="h-16 w-16 md:h-20 md:w-20 object-contain" 
+              className="h-20 w-20 md:h-20 md:w-20 object-contain transition-all duration-300 group-hover:brightness-35"
             />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span className="text-white font-bold text-lg">{image.alt}</span>
+            </div>
           </div>
         ))}
       </div>
     </div>
-  );
+  </div>
+);
 }
