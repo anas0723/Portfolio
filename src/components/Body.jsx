@@ -125,8 +125,8 @@ export default function Body() {
           />
         </div>
         <Skill />
+        <Project />
         <SocialLinks />
-        {/* <Project /> */}
       </div>
     </div>
   );

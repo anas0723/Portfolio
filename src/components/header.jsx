@@ -5,8 +5,9 @@ import MainCursor from "./MainCursor";
 
 const links = [
   { title: "About", link: "#About" },
-  { title: "Projects", link: "#Project" },
-  { title: "Contact", link: "#Contact" },
+  { title: "ToolKit", link: "#ToolKit" },
+  { title: "Projects", link: "#Projects" },
+  { title: "LinksHub", link: "#LinksHub" }
 ];
 
 export default function Header() {
