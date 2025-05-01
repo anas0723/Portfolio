@@ -34,11 +34,13 @@ export default function Skill() {
   ];
 
   return (
-    <div id="skills" className="mt-20">
+    <div id="skills" className="">
     <div className="bg-[#112240]  p-8">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">
+    <div className="flex justify-center mt-13">
+      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center  p-4  hover:shadow-2xl hover:shadow-[#64ffda] text-centermd:text-6xl sm:text-3xl font-mono hover:border-2  flex  items-center justify-center   text-[#64ffda]  mono  rounded-lg border-2  transition-all duration-300 cursor-pointer">
         Languages & Tools
       </h1>
+      </div>
       <div className="flex flex-wrap justify-center gap-8">
         {images.map((image, index) => (
           <div

@@ -5,6 +5,9 @@ import Skill from "./Skill";
 import Project from "./Project.jsx";
 import SocialLinks from "./SocialLinks.jsx";
 import { LiaAcquisitionsIncorporated } from "react-icons/lia";
+import Contact from "./Contact.jsx";
+import Footer from "./Footer.jsx";
+
 
 export default function Body() {
   const scrollToAbout = () => {
@@ -127,6 +130,8 @@ export default function Body() {
         <Skill />
         <Project />
         <SocialLinks />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );
